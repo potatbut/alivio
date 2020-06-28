@@ -7,8 +7,8 @@ html(lang="en")
     body
         wrapper
             header
-                logo
-                    img(src="./image/logo.png", alt="")
+                .logo
+                    img(src="./image/logo.png" alt="" class='logo-alivio')
                 .menu
                     ul.menu__list
                         li.menu__item
@@ -19,10 +19,12 @@ html(lang="en")
                             a(href="#") Community
                         li.menu__item
                             a(href="#") Pricing
-                form(action="#")
+                a(class="sing-up-link" href="https://github.com/potatbut" target='_blank' title="Actually my github :)") Sign in
+                form(action="https://github.com/potatbut" target='_blank' title="Actually my github :)")
                     button.button-trial Start Trial
+            //- section.block-with-image
+            //-     img(src="./image/women.png" class="block-with-image__image")
 
-            section
             section
             section
             section

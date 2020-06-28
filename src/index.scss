@@ -1,48 +1,10 @@
 @import './style/fontFace.scss';
+@import './style/header.scss';
 
 * {
     font-size: 20px;
     font-family: 'Lato';
-    background-color: thistle;
     justify-content: space-between;
+    color: #292929;
 
-}
-header {
-    display: flex;
-    width: 80%;
-    margin: 2% auto;
-}
-.menu {
-    width: 50%;
-    &__list {
-        margin: 0;
-        padding: 0;
-        
-    }
-    &__item {
-        padding: 0;
-        margin: auto 2%;
-        text-decoration: none;
-        display: inline;
-        
-    }
-    a {
-        color: #292929;
-        text-decoration: none;
-        
-    }
-}
-.button-trial {
-    width: 183px;
-    height: 51px;
-    background: #01996D;
-    border: none;
-    outline: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    border-radius: 4px;
-    color: #fff;
-    &:active {
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    }
 }
