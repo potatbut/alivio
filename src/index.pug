@@ -3,12 +3,13 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://unpkg.com/modern-css-reset/dist/reset.min.css")
         title Alivio
     body
-        wrapper
-            header
-                .logo
-                    img(src="./image/logo.png" alt="" class='logo-alivio')
+        .wrapper
+            header.header.wrapper__header
+                a(class='header__logo' href="#")
+                    img(src="./image/logo.png" alt="logo-alivio" class="logo-alivio")
                 .menu
                     ul.menu__list
                         li.menu__item
@@ -19,13 +20,12 @@ html(lang="en")
                             a(href="#") Community
                         li.menu__item
                             a(href="#") Pricing
-                a(class="sing-up-link" href="https://github.com/potatbut" target='_blank' title="Actually my github :)") Sign in
-                form(action="https://github.com/potatbut" target='_blank' title="Actually my github :)")
-                    button.button-trial Start Trial
-            //- section.block-with-image
-            //-     img(src="./image/women.png" class="block-with-image__image")
-
-            section
+                .link-button-block
+                    a(class="sing-up-link" href="https://github.com/potatbut" target='_blank' title="Actually my github :)") Sign in
+                    form(action="https://github.com/potatbut" target='_blank' title="Actually my github :)")
+                        button.button-trial Start Trial
+            section.headline
+                img(src="./image/women.jpg" alt="headline-image" class="headline-image")
             section
             section
             footer

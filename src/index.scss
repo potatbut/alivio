@@ -1,10 +1,12 @@
 @import './style/fontFace.scss';
+@import './style/css-reset.scss';
 @import './style/header.scss';
 
 * {
+    color: #292929;
+}
+body {
     font-size: 20px;
     font-family: 'Lato';
-    justify-content: space-between;
-    color: #292929;
 
 }
