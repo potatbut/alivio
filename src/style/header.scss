@@ -2,18 +2,18 @@
     display: flex;
     max-width: 1290px;
     margin: 20px auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
     &__logo {
         width: 81px;
-        height: 20px;
         margin: auto;
     }
     .menu {
         margin: auto;
+        max-width: 600px;
         &__item {
             display: inline;
             margin: auto;
-            margin-right: 5rem;
+            margin-right: 3vw;
         }
         &__item a {
             text-decoration: none;
@@ -22,13 +22,17 @@
             }
         }
     }
-    .link-button-block {
+    .link-button-block {/* 
+        display: grid;
+        grid-template-columns: 0.8fr 1fr; */
         display: flex;
+        margin: auto;
         .sing-up-link {
             margin: auto 20px;
             text-decoration: none;
+            color: #01996D;
             &:hover {
-                color: #01996D;
+                color: #292929;
             }
         }
         .button-trial {
@@ -48,9 +52,14 @@
         }
     }
 }
-/* @media screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
     .header {
-        
-
-    }
-} */
+        font-size: 0.9rem;
+        .link-button-block {
+            .button-trial {
+                width: 90px;
+                height: 25px;
+            }
+        }
+    } 
+} 
