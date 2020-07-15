@@ -25,11 +25,11 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ]
-            } , {
-                test: /\.(png|jpg|gif|svg)$/i,
-                use: 'file-loader',
             }, {
                 test: /\.(eot|woff|ttf|woff2)$/i,
+                use: 'url-loader',
+            }, {
+                test: /\.(png|jpg|gif|svg)$/i,
                 use: 'url-loader',
             }
         ]
