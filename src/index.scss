@@ -2,6 +2,7 @@
 @import './style/css-reset.scss';
 @import './style/header.scss';
 @import './style/headline.scss';
+@import './blocks/button/button.scss';
 
 * {
     color: #292929;
@@ -9,5 +10,4 @@
 body {
     font-size: 20px;
     font-family: 'Lato';
-
 }
