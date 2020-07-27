@@ -6,17 +6,44 @@
     display: flex;
     &__block {
         margin: auto auto auto 10%;
-    }
-    &__text {
         display: flex;
         flex-wrap: wrap;
-        width: 440px;
-        height: 15vw;
+        width: 420px;
     }
     &__heading {
         font-family: 'Questrial';
-        font-weight: bolder;
+        font-weight: bold;
         font-size: 3em;
         color: #01996D;
     }
+    &__description {
+        color: #484848;
+        line-height: 1.5em;
+    }
+    &__button {
+        margin-top: 15%;
+    }
 }
+
+@media screen and (max-width: 920px) {
+    .headline {
+        font-size: 0.7em;
+        &__block {
+           /*  width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 25% auto auto auto;
+            flex-wrap: nowrap; */
+        }
+        &__text {
+            /* margin: auto 3%; */
+        }
+        &__heading {
+        }
+        &__description {
+        }
+        &__button {
+            /* margin: 5% auto; */
+        }
+    }
+    
+}  
