@@ -28,21 +28,17 @@
 @media screen and (max-width: 920px) {
     .headline {
         font-size: 0.7em;
+        background-size: 130%;
         &__block {
-           /*  width: 100%;
-            background-color: rgba(255, 255, 255, 0.5);
-            margin: 25% auto auto auto;
-            flex-wrap: nowrap; */
+            width: 300px;
         }
         &__text {
-            /* margin: auto 3%; */
         }
         &__heading {
         }
         &__description {
         }
         &__button {
-            /* margin: 5% auto; */
         }
     }
     

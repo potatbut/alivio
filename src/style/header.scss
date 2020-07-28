@@ -37,6 +37,27 @@
 }
 @media screen and (max-width: 920px) {
     .header {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        &__logo {
+            width: 50px;
+        }
+        .link-button-block {
+            .sing-up-link {
+                width: 20px;
+                content: url(./image/signIn.png);
+                margin: auto 5% auto auto;
+            }    
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        .link-button-block {
+            .button-trial {
+                font-size: 0.6rem;
+                width: 50px;
+            }
+        }
     } 
-} 
+}
