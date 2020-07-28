@@ -11,7 +11,9 @@ html(lang="en")
             header.header.wrapper__header
                 a(class='header__logo' href="#")
                     img(src="./image/logo.png" alt="logo-alivio" class="logo-alivio")
+                
                 .menu
+                    
                     ul.menu__list
                         li.menu__item
                             a(href="#") Why Alivio
@@ -22,8 +24,11 @@ html(lang="en")
                         li.menu__item
                             a(href="#") Pricing
                 .link-button-block
+                    .menuToggle
                     a(class="sing-up-link" href="https://github.com/potatbut" target='_blank' title="Sign Up (Actually my github :))") Sign in
                     +button('https://github.com/potatbut', 'button-trial', 'Start Trial', 'Start Trial (Actually my github :))')
+                    a(class="button-trial-mobile" href="https://github.com/potatbut" target='_blank' title="Sign Up (Actually my github :))")
+
             section.headline
                 .headline__block
                     .headline__text

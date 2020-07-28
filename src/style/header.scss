@@ -38,15 +38,49 @@
 @media screen and (max-width: 920px) {
     .header {
         font-size: 0.9rem;
-        &__logo {
-            width: 50px;
-        }
-        /* .link-button-block {
+        .link-button-block {
             .sing-up-link {
-                width: 20px;
-                content: url(./image/signIn.png);
-                margin: auto 5% auto auto;
-            }    
-        } */
+                content: url("./image/signIn.png");
+                &:hover {
+                    border-radius: 5px;
+                    background-color: #01996D;
+                }
+            }
+            .button-trial {
+                display: none;
+            }
+            .button-trial-mobile {
+                content: url("./image/startTrial.png");
+                &:hover {
+                    border-radius: 5px;
+                    background-color: #01996D;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .header {
+        justify-content: space-between;
+        &__logo {
+            margin: 0 0 0 2%;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            &__item {
+            }
+            &__item a {
+            }
+        }
+        .link-button-block {
+            margin: 0 2% 0 0;
+            .menuToggle {
+                content: url("./image/menu.png");
+            }
+            .sing-up-link {
+                margin: auto 1vw;
+            }
+        }
     }
 }
