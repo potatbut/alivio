@@ -59,28 +59,10 @@
         }
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     .header {
-        justify-content: space-between;
-        &__logo {
-            margin: 0 0 0 2%;
-        }
-        .menu {
-            display: none;
-            position: fixed;
-            &__item {
-            }
-            &__item a {
-            }
-        }
         .link-button-block {
-            margin: 0 2% 0 0;
-            .menuToggle {
-                content: url("./image/menu.png");
-            }
-            .sing-up-link {
-                margin: auto 1vw;
-            }
+            display: none;
         }
     }
 }
