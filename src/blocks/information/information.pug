@@ -1,0 +1,6 @@
+mixin information(additionalClass, number, headline, description, src, alt)
+    .information__ordinalModule.ordinalModule(class=additionalClass)
+        .ordinalModule__number=number
+        .ordinalModule__headline=headline
+        .ordinalModule__desc=description
+        img(class='ordinalModule__image',src=src, alt=alt)

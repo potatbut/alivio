@@ -1,0 +1,66 @@
+.information {
+    &__wrapper {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__ordinalModule {
+        width: 20vw;
+    }
+    .ordinalModule {
+        display: flex;
+        flex-wrap: wrap;
+        &__number {
+            font-family: 'Questrial';
+            font-size: 5em;
+            color: rgba(1, 153, 109, 0.2);
+            width: 6vw;
+        }
+        &__headline {
+            margin: auto;
+            font-size: 1.5em;
+            font-family: 'Questrial';
+            font-weight: bolder;
+        }
+        &__desc {
+            color: #424242;
+            line-height: 1.5;
+            margin: 10% auto
+        }
+        &__image {
+            border-radius: 20px;
+            display: block;
+            align-self: center;
+        }
+    }
+    .writeUnderstand {
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 920px) {
+    .information {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .information {
+        &__wrapper {
+            margin: auto;
+            display: block;
+        }
+        &__ordinalModule {
+            width: auto;
+        }
+        .ordinalModule {
+            &__desc {
+                margin: 3% auto;
+            }
+            &__image {
+                height: 50px;
+                width: auto;
+            }
+        }
+            
+    }
+}

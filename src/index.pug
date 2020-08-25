@@ -7,6 +7,7 @@ html(lang="en")
         title Alivio
     body
         include ./blocks/button/button.pug
+        include ./blocks/information/information.pug
         .wrapper
             header.header.wrapper__header
                 a(class='header__logo' href="#")
@@ -33,11 +34,20 @@ html(lang="en")
                         h1.headline__heading Be aware, Manage well.
                         p.headline__description Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.
                     +button('https://github.com/potatbut', 'headline__button', 'Find Your Way', 'Find Your Way (Actually my github :))')
+            
             section.text
                 .text__wrapper
                     .text__note How it works
                     .text__rubric
                         .text__heading Understand & Release the stress in 3 steps
                         .text__desc Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.
-            section
+            
+            section.information
+                .information__wrapper
+                    +information('personalize','01', 'Personalize', 
+                                'Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!', "./image/pc.jpg", 'pc image') 
+                    +information('writeUnderstand', '02', 'Write & Understand',
+                                'Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!', "./image/books.jpg", 'books image')
+                    +information('alivio', '03', 'Alivio!',
+                                'Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for? Alivio today!', "./image/women2.jpg", 'women image')
             footer
