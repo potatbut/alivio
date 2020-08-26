@@ -1,0 +1,88 @@
+.videoInformation {
+    background-color: #245852;
+    display: flex;
+    &__wrapper {
+        display: flex;
+        margin: 5vw auto;
+        justify-content: space-between;
+        width: 80%;
+    }
+    &__text {
+        display: flex;
+        margin: auto auto auto 0;
+        justify-content: space-between;
+        width: 80%;
+        line-height: 1.2;
+    }
+    &__text {
+        flex-wrap: wrap;
+        width: 25vw;
+        height: 15vw;
+    }
+    &__headline, &__desc {
+        color: white;
+    }
+    &__headline {
+        font-family: 'Questrial';
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    &__video {
+        width: 45vw;
+        height: 30vw;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .videoInformation {
+        &__text {
+            font-size: 0.7em;
+        }
+    }
+} 
+
+@media screen and (max-width: 920px) {
+    .videoInformation {
+        &__text {
+            margin: 0;
+            width: 50vw;
+        }
+        &__video {
+            width: 35vw;
+            height: 20vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .videoInformation {
+        &__wrapper {
+            flex-wrap: wrap;
+            height: 80vw;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__video {
+            width: 100%;
+            height: 55%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .videoInformation {
+        &__wrapper {
+            height: 100vw;
+        }
+        &__text {
+            width: 100%;
+            height: 60%;
+        }
+        &__video {
+            width: 100%;
+            height: 40%;
+        }
+    }
+}

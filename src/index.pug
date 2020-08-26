@@ -26,7 +26,7 @@ html(lang="en")
                     .menuToggle
                     a(class="sing-up-link" href="https://github.com/potatbut" target='_blank' title="Sign Up (Actually my github :))") Sign in
                     +button('https://github.com/potatbut', 'button-trial', 'Start Trial', 'Start Trial (Actually my github :))')
-                    a(class="button-trial-mobile" href="https://github.com/potatbut" target='_blank' title="Sign Up (Actually my github :))")
+                    a(class="button-trial-mobile" href="https://github.com/potatbut" target='_blank' title="Sign In (Actually my github :))")
 
             section.headline
                 .headline__block
@@ -50,4 +50,15 @@ html(lang="en")
                                 'Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!', "./image/books.jpg", 'books image')
                     +information('alivio', '03', 'Alivio!',
                                 'Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for? Alivio today!', "./image/women2.jpg", 'women image')
+            
+            section.videoInformation
+                .videoInformation__wrapper
+                    .videoInformation__text
+                        .videoInformation__headline Let's hear about Kevin's success story
+                        .videoInformation__desc See how well Alivio works in a real customer’s life.
+                        +button('https://github.com/potatbut', 'videoInformation__button', 'Let’s get started', 'Let’s get started (Actually my github :))')
+                    iframe(class="videoInformation__video"  src="https://www.youtube.com/embed/WcYG-5b7448" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                            
+
+
             footer
