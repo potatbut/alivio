@@ -1,16 +1,31 @@
 .footer {
     height: 100px;
     background-color: #245852;
-    .menu {
-        max-width: 800px;
-        &__
-        &__item {
-            display: inline;
+    .menu-footer {
+        &__list {
+            max-width: 430px;
             margin: auto;
-            margin: 2vw;
+        }
+        &__item {
+            display: inline; 
+            margin: 10px;
         }
         &__item a {
             color: #fff;
+        }
+    }
+}
+@media screen and (max-width: 920px) {
+    .footer {
+        font-size: 0.8em;
+        .menu-footer {
+            &__item {
+                display: flex; 
+                margin: 10px;
+            }
+            &__item a {
+                color: #fff;
+            }
         }
     }
 }
